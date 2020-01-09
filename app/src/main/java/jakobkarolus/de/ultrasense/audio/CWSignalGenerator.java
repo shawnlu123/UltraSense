@@ -1,7 +1,5 @@
 package jakobkarolus.de.ultrasense.audio;
 
-import android.util.FloatMath;
-
 /**
  * Generate a continous wave signal of given frequency, amplitude and length (seconds)
  *<br><br>
@@ -53,7 +51,7 @@ public class CWSignalGenerator implements SignalGenerator{
             double angle = freq * 2.0 * Math.PI * time;
             //make sure we got precise calculations
             angle %= 2.0*Math.PI;
-            buffer[sample] = (float) (amplitude * FloatMath.sin((float)angle));
+            buffer[sample] = (float) (amplitude * Math.sin((float) angle));
         }
 
         final byte[] byteBuffer = new byte[buffer.length * 2];

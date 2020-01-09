@@ -56,7 +56,8 @@ public class FMCWSignalGenerator implements SignalGenerator{
                 double time = (double)sample/sampleRate;
                 double phase = 2.0*Math.PI*time*(frequency + (freqIncline/2.0)*time);
 
-                buffer[cycle*singleChirpSamples + sample]  = amplitude* FloatMath.sin((float) phase);
+                buffer[cycle * singleChirpSamples + sample] = amplitude * ((float) Math
+                    .sin((float) phase));
 
             }
             if(!onlyRampUp) {

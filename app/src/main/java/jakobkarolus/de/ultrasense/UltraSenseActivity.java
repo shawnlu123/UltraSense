@@ -2,18 +2,17 @@ package jakobkarolus.de.ultrasense;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import jakobkarolus.de.ultrasense.view.UltraSenseFragment;
 import jakobkarolus.de.ultrasense.view.SettingsFragment;
+import jakobkarolus.de.ultrasense.view.UltraSenseFragment;
 
 
 /**
  * Main activity of UltraSense
  */
-public class UltraSenseActivity extends ActionBarActivity{
+public class UltraSenseActivity extends AppCompatActivity {
 
 
     @Override
